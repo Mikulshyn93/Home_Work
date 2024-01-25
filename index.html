@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Template Page</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="./gellery.html" target="_blank">Gellery</a>
-        </nav>
-        <h1>Список Команд GitHub</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./pages/page.html" class="menu__item-link">Page</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
-            <h2>Список з першого заннятя</h2>
-            <ul>
-                <li>git clone - Клонує репозиторій</li>
-                <li>git pull - Стягує оновлення з репозиторію</li>
-                <li>git push - Записує оновлення коду на віддалений репозиторій</li>
-                <li>git status - показує статус в локальному репозитрії</li>
-                <li>git add . - гіт починає відслідковувати зміни що внесені в файл</li>
-                <li>git commit -m “commit text” - зберігає поточний стан файла</li>
-                <li>git commit -am “text commit” - короткий запис команда git add . та git commit -m “” (Працює лише для вже відстежуваних файлів)</li>
-                <li>git branch - показує список локальних гілок</li>
-                <li>git branch name - створює гілку з ім’ям name</li>
-                <li>git checkout -b name - створює нову гілку з ім’ям “name” і переходить в неї</li>
-                <li>git checkout name - перехід до потрібної гілки</li>
-            </ul>
-        </section>
-        <h3>Команди з другого заннятя</h3>
-        <section>
-            <ul>
-                 <li>git merge name - злятя гілки “name” в поточну</li>
-                 <li>git merge --abort - відміна злиття гілок</li>
-                 <li>git stash - ховає внесені зміни в “кишеню”. (Використовується тоді коли потрібно перейти в іншу гілку але не хочеться робити коміт)</li>
-                 <li>git stash apply - відновлює код з “кишені” (Повертає схований код)</li>
-            </ul>
+            <div class="container">
+                <!-- Content -->
+                <h1 class="title">Home</h1>
+                <div>
+                    <img src="./images/Placehold.svg" alt="Placehold">
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <h2>Footer</h2>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
